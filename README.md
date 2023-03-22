@@ -1,6 +1,8 @@
 <div align=center>
   
-  # 👍👍👍Linux内核学习资料：200+篇经典内核文章，100+篇内核论文，50+内核项目，500+道内核面试题，80+内核讲解视频
+  # 肝下50万字《Linux内核精通》笔记，你的底层原理水平将从入门到入魔
+	
+  ### 200+篇经典内核文章，100+篇内核论文，50+内核项目，500+道内核面试题，80+内核讲解视频
     
 </div>
 
@@ -25,7 +27,15 @@
 * [了解Linux内核由哪些组成？](#1)
 * [须知Linux内核源码（下载的链接👆👆👆）组织结构？](#2)
 * [重点需要学习地知识点有哪些？](#3)
+* [Linux内核架构和工作原理](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E5%86%85%E6%A0%B8%E6%9E%B6%E6%9E%84%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.md)
+* [Linux内核Makefile系统文件详解](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E5%86%85%E6%A0%B8Makefile%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.md)
+* [计算机Intel CPU体系结构分析](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%A1%E7%AE%97%E6%9C%BAIntel%20CPU%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90.md)
+* [QEMU调试Linux内核环境搭建](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/QEMU%E8%B0%83%E8%AF%95Linux%E5%86%85%E6%A0%B8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
+* [Linux Kernel内核整体架构(图文详解)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%20Kernel%E5%86%85%E6%A0%B8%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84(%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3).md)
+* [Linux内核看socket底层的本质(IO)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E5%86%85%E6%A0%B8%E7%9C%8Bsocket%E5%BA%95%E5%B1%82%E7%9A%84%E6%9C%AC%E8%B4%A8(IO).md)
+* [Linux用户空间与内核空间通信(Netlink通信机制)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4%E4%B8%8E%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E9%80%9A%E4%BF%A1(Netlink%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6).md)
 * [最后依据我为大家提供的的学习资料，开启我们的Linux学习之旅。](#4)
+
 
 
 ---
@@ -36,13 +46,29 @@
 ### 【🏆 强烈推荐阅读】[Linux入门学习笔记.pdf](https://github.com/0voice/linux_kernel_wiki/blob/main/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf)<br>
 <br>
 
-**[操作系统]()**
+**[操作系统](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86)**<br>
+官方说明：操作系统（英语：Operating System，缩写：OS）是一组主管并控制计算机操作、运用和运行硬件、软件资源和提供公共服务来组织用户交互的相互关联的系统软件程序。根据运行的环境，操作系统可以分为桌面操作系统，手机操作系统，服务器操作系统，嵌入式操作系统等。
 
 [1、Linux操作系统学习——启动](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E5%90%AF%E5%8A%A8.md)<br>
 [2、Linux操作系统学习——内核运行](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E5%86%85%E6%A0%B8%E8%BF%90%E8%A1%8C.md)<br>
 [3、Linux操作系统学习——内核初始化](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94%E5%86%85%E6%A0%B8%E5%88%9D%E5%A7%8B%E5%8C%96.md)<br>
+[4、Linux操作系统IO机制原理(流程图详解)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FIO%E6%9C%BA%E5%88%B6%E5%8E%9F%E7%90%86(%E6%B5%81%E7%A8%8B%E5%9B%BE%E8%AF%A6%E8%A7%A3).md)<br>
+[5、Linux操作系统处理器调度基本准则和实现](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%84%E7%90%86%E5%99%A8%E8%B0%83%E5%BA%A6%E5%9F%BA%E6%9C%AC%E5%87%86%E5%88%99%E5%92%8C%E5%AE%9E%E7%8E%B0.md)<br>
+[6、Linux操作系统基础的常用命令](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)<br>
+[7、Linux操作系统进程的状态和转换(五态模型)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81%E5%92%8C%E8%BD%AC%E6%8D%A2(%E4%BA%94%E6%80%81%E6%A8%A1%E5%9E%8B).md)<br>
+[8、Linux操作系统进程同步的几种方式及基本原理](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%8F%8A%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)<br>
+[9、Linux操作系统内存管理RAID磁盘阵列与配置](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86RAID%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97%E4%B8%8E%E9%85%8D%E7%BD%AE.md)<br>
+[10、Linux操作系统内存管理之磁盘高速缓存机制](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%B9%8B%E7%A3%81%E7%9B%98%E9%AB%98%E9%80%9F%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6.md)<br>
+[11、Linux操作系统通过实战理解CPU上下文切换](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%80%9A%E8%BF%87%E5%AE%9E%E6%88%98%E7%90%86%E8%A7%A3CPU%E4%B8%8A%E4%B8%8B%E6%96%87%E5%88%87%E6%8D%A2.md)<br>
+[12、Linux内核操作系统原理与概述(流程图)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E5%86%85%E6%A0%B8%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86%E4%B8%8E%E6%A6%82%E8%BF%B0(%E6%B5%81%E7%A8%8B%E5%9B%BE).md)<br>
+[13、Linux操作系统ARM体系结构处理器机制原理与实现](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FARM%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%A4%84%E7%90%86%E5%99%A8%E6%9C%BA%E5%88%B6%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0.md)<br>
+[14、Linux操作系统ARM指令集与汇编语言程序设计](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9FARM%E6%8C%87%E4%BB%A4%E9%9B%86%E4%B8%8E%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1.md)<br>
+[15、Linux操作系统汇编语言基础知识(图文代码)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86(%E5%9B%BE%E6%96%87%E4%BB%A3%E7%A0%81).md)<br>
+[16、Linux操作系统汇编指令入门级整理知识点](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4%E5%85%A5%E9%97%A8%E7%BA%A7%E6%95%B4%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9.md)<br>
 
-**[进程管理](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86)**
+
+**[进程管理](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86)**<br>
+计算机术语:进程是正在运行的程序实体，并且包括这个运行的程序中占据的所有系统资源，比如说CPU（寄存器），IO,内存，网络资源等。很多人在回答进程的概念的时候，往往只会说它是一个运行的实体，而会忽略掉进程所占据的资源。比如说，同样一个程序，同一时刻被两次运行了，那么他们就是两个独立的进程。linux下查看系统进程的命令是ps。
 
 [1、Linux进程、线程、调度(一)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E4%B8%80).md)<br>
 [2、Linux进程、线程、调度(二)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E4%BA%8C).md)<br>
@@ -59,7 +85,8 @@
 [13、进程间通信之共享内存和信号量](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98%E5%92%8C%E4%BF%A1%E5%8F%B7%E9%87%8F.md)<br>
 [14、Linux内核进程调度O(1)调度算法](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6O(1)%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95.md)<br>
 
-**[内存管理](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86)**
+**[内存管理](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86)**<br>
+管理学领域术语：内存管理是指软件运行时对计算机内存资源的分配和使用的技术。其最主要的目的是如何高效，快速的分配，并且在适当的时候释放和回收内存资源。一个执行中的程式，譬如网页浏览器在个人电脑或是图灵机（Turing machine）里面，为一个行程将资料转换于真实世界及电脑内存之间，然后将资料存于电脑内存内部（在计算机科学，一个程式是一群指令的集合，一个行程是电脑在执行中的程式）。一个程式结构由以下两部分而成：“本文区段”，也就是指令存放，提供CPU使用及执行； “资料区段”，储存程式内部本身设定的资料，例如常数字串。
 
 [1、硬件原理 和 分页管理](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E7%A1%AC%E4%BB%B6%E5%8E%9F%E7%90%86%20%E5%92%8C%20%E5%88%86%E9%A1%B5%E7%AE%A1%E7%90%86.md)<br>
 [2、内存的动态申请和释放](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E5%86%85%E5%AD%98%E7%9A%84%E5%8A%A8%E6%80%81%E7%94%B3%E8%AF%B7%E5%92%8C%E9%87%8A%E6%94%BE.md)<br>
@@ -81,7 +108,8 @@
 [16、Linux内核之系统调用](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8.md)<br>
 [17、Linux内核之任务空间管理](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E4%BB%BB%E5%8A%A1%E7%A9%BA%E9%97%B4%E7%AE%A1%E7%90%86.md)<br>
 
-**[网络协议栈](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%A0%88)**
+**[网络协议栈](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%A0%88)**<br>
+官方说明：计算机网络中的一种软件架构，用于实现网络通信的各种协议。它是一种层次化的结构，由多个协议层次组成，每个层次负责不同的功能，从而实现网络通信的各种功能。
 
 [1、Linux内核网络udp数据包发送(一)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%A0%88/Linux%E5%86%85%E6%A0%B8%E7%BD%91%E7%BB%9Cudp%E6%95%B0%E6%8D%AE%E5%8C%85%E5%8F%91%E9%80%81(%E4%B8%80).md)<br>
 [2、Linux内核网络udp数据包发送（二）-UDP协议层分析](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E6%A0%88/Linux%E5%86%85%E6%A0%B8%E7%BD%91%E7%BB%9Cudp%E6%95%B0%E6%8D%AE%E5%8C%85%E5%8F%91%E9%80%81%EF%BC%88%E4%BA%8C%EF%BC%89-UDP%E5%8D%8F%E8%AE%AE%E5%B1%82%E5%88%86%E6%9E%90.md)<br>
@@ -97,7 +125,8 @@
 
 <br>
 
-**[设备驱动](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8)**
+**[设备驱动](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8)**<br>
+官方说明：设备驱动是指操作系统和输入输出设备间的粘合剂。
 
 [1、Linux 总线、设备、驱动模型的探究](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/Linux%20%E6%80%BB%E7%BA%BF%E3%80%81%E8%AE%BE%E5%A4%87%E3%80%81%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%8E%A2%E7%A9%B6.md)<br>
 [2、Linux 设备和驱动的相遇](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/Linux%20%E8%AE%BE%E5%A4%87%E5%92%8C%E9%A9%B1%E5%8A%A8%E7%9A%84%E7%9B%B8%E9%81%87.md)<br>
@@ -105,7 +134,8 @@
 
 <br>
 
-**[文件系统](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)**
+**[文件系统](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)**<br>
+官方说明：文件系统是操作系统用于明确存储设备（常见的是磁盘，也有基于NAND Flash的固态硬盘）或分区上的文件的方法和数据结构；即在存储设备上组织文件的方法。操作系统中负责管理和存储文件信息的软件机构称为文件管理系统，简称文件系统。文件系统由三部分组成：文件系统的接口，对对象操纵和管理的软件集合，对象及属性。从系统角度来看，文件系统是对文件存储设备的空间进行组织和分配，负责文件存储并对存入的文件进行保护和检索的系统。具体地说，它负责为用户建立文件，存入、读出、修改、转储文件，控制文件的存取，当用户不再使用时撤销文件等。
 
 [1、Linux 操作系统原理-文件系统(一)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/Linux%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F(1).md)<br>
 [2、Linux 操作系统原理-文件系统(二)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/Linux%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F(2).md)<br>
@@ -266,70 +296,39 @@
 
 <h2 id="7">📀 视频</h2>
 
-<br>
+### **Linux内核源码视频讲解**
 
-**国外大神**
+1、深度剖析Linux内核SMP负载均衡-----[视频讲解地址](https://www.bilibili.com/video/BV1Z84y1w7Qa/)<br>
 
-1、Linux Kernel Network Drivers - Classification（Linux内核网络驱动程序）-----[点击观看](https://www.bilibili.com/video/BV1Mf4y1o7qe/?spm_id_from=333.999.0.0&vd_source=952fe0586840740c9f6558c15266fb83)<br>
+2、深度剖析Linux内核ARM64处理器架构-----[视频讲解地址](https://www.bilibili.com/video/BV1sY4y1y7yW/)<br>
 
-2、Linux Kernel Development（Linux内核开发）-----[点击观看](https://www.bilibili.com/video/BV1kG411W7f2/?spm_id_from=333.999.0.0&vd_source=952fe0586840740c9f6558c15266fb83)<br>
+3、深度剖析Linux内核ARM异常处理-----[视频讲解地址](https://www.bilibili.com/video/BV1PY4y1y7Nq/)<br>
 
-3、The mind behind Linux（Linux背后的思想）-----[点击观看](https://www.youtube.com/watch?v=o8NPllzkFhE)<br>
+4、深度剖析Linux内核CFS调度器-----[视频讲解地址](https://www.bilibili.com/video/BV1v8411c7E5/)<br>
 
-4、Linux Systems Performance（Linux系统性能）-----[点击观看](https://www.youtube.com/watch?v=fhBHvsi0Ql0)<br>
+5、深度剖析Linux内核量化负载计算能力-----[视频讲解地址](https://www.bilibili.com/video/BV1rN411c7eR/)<br>
 
-5、Network Driver Interfaces（网络驱动程序接口）-----[点击观看](https://www.youtube.com/watch?v=YSMRcjvN8w8)<br>
+6、深度剖析Linux内核进程及生命周期-----[视频讲解地址](https://www.bilibili.com/video/BV1M24y137Je/)<br>
 
-6、Selective module compilation in mainline kernel（在主线内核中编译可选模块）-----[点击观看](https://www.youtube.com/watch?v=SqfIhE_OBXU)<br>
+7、深度剖析Linux内核CPU域初始化实现-----[视频讲解地址](https://www.bilibili.com/video/BV1NL411y7eM/)<br>
 
-7、Linux System Programming 6 Hours Course（Linux系统编程6小时课程）-----[点击观看](https://www.youtube.com/watch?v=8usykf7J30g)<br>
+8、深度剖析Linux内核蓝牙子系统架构-----[视频讲解地址](https://www.bilibili.com/video/BV1yX4y1Z7Db/)<br>
 
-8、Introduction to Threads（线程简介）-----[点击观看](https://www.youtube.com/watch?v=LOfGJcVnvAk)<br>
+9、深度剖析Linux内核USB系统架构-----[视频讲解地址](https://www.bilibili.com/video/BV1wM411p7ui/)<br>
 
-9、Learning the Linux Kernel with tracing（通过跟踪学习Linux内核）-----[点击观看](https://www.youtube.com/watch?v=JRyrhsx-L5Y)<br>
+10、深度剖析Linux内核IO体系结构与访问设备-----[视频讲解地址](https://www.bilibili.com/video/BV16s4y1p7ME/)<br>
 
-10、How to Apply a Patch to the Linux Kernel Stable Tree（如何将补丁应用到Linux内核稳定树）-----[点击观看](https://www.youtube.com/watch?v=6zUVS4kJtrA)<br>
+11、深度剖析Linux内核进程管理机制-----[视频讲解地址](https://www.bilibili.com/video/BV1Pk4y1h76c/)<br>
 
-11、Linux Kernel Programming（Linux内核编程- atomic_t数据类型-原子变量和api）-----[点击观看](https://www.youtube.com/watch?v=WiZ05pnHZqM)<br>
+12、深度剖析Linux内核MLFQ经典调度算法-----[视频讲解地址](https://www.bilibili.com/video/BV1io4y167k3/)<br>
 
+13、深入剖析Linux内核伙伴系统实现及API调度实战-----[视频讲解地址](https://www.bilibili.com/video/BV1X24y147wj/)<br>
 
-12、Kernel Recipes 2017 - 性能优化大牛Brendan Gregg  -----[点击观看](https://www.youtube.com/watch?v=RKadXpQLmPU)<br>
+14、深入剖析Linux内核哈希表与运行队列-----[视频讲解地址](https://www.bilibili.com/video/BV1Wg4y1b72M/)<br> 
 
-<br>
+15、深入剖析Linux内核NUMA调度器-----[视频讲解地址](https://www.bilibili.com/video/BV1UT411a7cN/)<br>
 
-**国内大佬**
-
-1、剖析Linux内核内存管理(一)-----[百度网盘：h98a](https://pan.baidu.com/s/1CgGSFHb80uKWspaCVoaSRw?pwd=h98a )<br>
-
-2、剖析linux内核内存管理(二)-----[百度网盘：syz3](https://pan.baidu.com/s/17y8Lil2VJNDHa7nQTe5JbQ?pwd=syz3 )<br>
-
-3、剖析Linux内核MMU详解-----[百度网盘：y1j8](https://pan.baidu.com/s/14RJMz7d3BUhjf8zbsFMwrg?pwd=y1j8 )<br>
-
-4、剖析Linux内核分配页机制-----[百度网盘：ajmt](https://pan.baidu.com/s/1aE3diCLG6x74JvQim9IqkA?pwd=ajmt )<br>
-
-5、剖析Linux内核网络协议栈-----[百度网盘：lzb0](https://pan.baidu.com/s/17xvRIqMQVyryZAN0HoTnXg?pwd=lzb0)<br>
-
-6、剖析Linux内核源码数据同步-----[百度网盘：9qgy](https://pan.baidu.com/s/1QQczD6tyvQo7SA5C-1uIsg?pwd=9qgy)<br>
-
-7、剖析Linux内核内存分配与回收机制-----[百度网盘：nks5](https://pan.baidu.com/s/18tVVunsZFQtS7MLLP3QFbA?pwd=nks5)<br>
-
-8、剖析Linux内核锁与IPC机制-----[百度网盘：7bhe](https://pan.baidu.com/s/1WLGF1EhRHgk2Nk1NZdphAQ?pwd=7bhe)<br>
-
-9、剖析Linux内核源码框架结构-----[百度网盘：zn3l](https://pan.baidu.com/s/1sH_d48jZ3OO34d5VdXTOCw?pwd=zn3l)<br>
-
-10、剖析Linux内核进程虚拟内存-----[百度网盘：py7h](https://pan.baidu.com/s/1z4elBwQDT6sEdSysJ1EkGA?pwd=py7h)<br>
-
-11、剖析Linux内核进程调度策略-----[百度网盘：z38g](https://pan.baidu.com/s/11mzYnsV5aGHmKVhMqeTsSg?pwd=z38g)<br>
-
-12、剖析Linux内核源码之地址映射机制-----[百度网盘：2f5t](https://pan.baidu.com/s/1blvscJsSbuv1q8kSzEEGIg?pwd=2f5t)<br>
-
-13、深度详解Linux内存管理(MM)机制-----[百度网盘：3x8j](https://pan.baidu.com/s/1Mdkg-uM7Jm3N-Nq61Q1Uqg?pwd=3x8j )<br>
-
-14、深度剖析Linux内核四大核心框架-----[百度网盘：qqjq](https://pan.baidu.com/s/1yVM6LWy-nFY-NskPa9blbA?pwd=qqjq)<br>
-
-15、Linux高性能服务器模型选择-----[百度网盘：z42d](https://pan.baidu.com/s/1T4n0Jpu424wfByvtNAojMQ?pwd=z42d)<br>
-
-16、红黑树在linux内核中的3种场景（红黑树证明，进程管理cfs，内存管理）-----[百度网盘：768f](https://pan.baidu.com/s/1XI95c3VS7ux9kGVdc41QMQ?pwd=768f)<br>
+16、深度剖析Linux内核perf性能优化分析-----[视频讲解地址](https://www.bilibili.com/video/BV1UT411a7wC/)<br>
 
 <br>
 
@@ -622,7 +621,7 @@ Linux内核主要由 **进程管理**、**内存管理**、**设备驱动**、**
 
 ##### 安利术语：零声，专注于C/C++，Linux，Nginx，ZeroMQ，MySQL，Redis，fastdfs，MongoDB，ZK，流媒体，CDN，P2P，K8S，Docker，TCP/IP，协程，DPDK, SPDK, bpf/ebpf等等相关技术分享。本repo由零声的小伙伴推动以及所有提交patch的小伙伴（后面鸣谢部分）参与，共同完成。内容来源于互联网，本repo仅限于整理总结。
 
-##### 零声Linux内核技术交流群: 865977150, [偶遇技术大佬交流，不定期书籍红包福利，每晚技术直播通知！](https://jq.qq.com/?_wv=1027&k=5b4k5VR5)
+##### 零声Linux内核/驱动技术交流群:1084338148, [偶遇技术大佬交流，不定期书籍红包福利，每晚技术直播通知！](https://jq.qq.com/?_wv=1027&k=rzJtyEnb)
 
 ##### 点击进入 [每晚八点内核技术直播https://ke.qq.com/course/4032547?flowToken=1040236](https://ke.qq.com/course/4032547?flowToken=1040236)
 
