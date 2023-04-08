@@ -70,20 +70,30 @@
 **[进程管理](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86)**<br>
 计算机术语:进程是正在运行的程序实体，并且包括这个运行的程序中占据的所有系统资源，比如说CPU（寄存器），IO,内存，网络资源等。很多人在回答进程的概念的时候，往往只会说它是一个运行的实体，而会忽略掉进程所占据的资源。比如说，同样一个程序，同一时刻被两次运行了，那么他们就是两个独立的进程。linux下查看系统进程的命令是ps。
 
-[1、Linux进程、线程、调度(一)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E4%B8%80).md)<br>
-[2、Linux进程、线程、调度(二)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E4%BA%8C).md)<br>
-[3、Linux进程、线程、调度(三)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E4%B8%89).md)<br>
-[4、Linux进程、线程、调度(四)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E5%9B%9B).md)<br>
+[1、Linux内核进程、线程、调度(一)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E4%B8%80).md)<br>
+[2、Linux内核进程、线程、调度(二)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E4%BA%8C).md)<br>
+[3、Linux内核进程、线程、调度(三)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E4%B8%89).md)<br>
+[4、Linux内核进程、线程、调度(四)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E3%80%81%E8%B0%83%E5%BA%A6(%E5%9B%9B).md)<br>
 [5、一文带你，彻底了解，零拷贝Zero-Copy技术](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%EF%BC%8C%E5%BD%BB%E5%BA%95%E4%BA%86%E8%A7%A3%EF%BC%8C%E9%9B%B6%E6%8B%B7%E8%B4%9DZero-Copy%E6%8A%80%E6%9C%AF.md)<br>
-[6、进程间通信，管道，socket，XSI(System V)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%8C%E7%AE%A1%E9%81%93%EF%BC%8Csocket%EF%BC%8CXSI(System%20V).md)<br>
-[7、Linux进程状态总结](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81%E6%80%BB%E7%BB%93.md)<br>
-[8、进程的核心——task_truct](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%A0%B8%E5%BF%83%E2%80%94%E2%80%94task_truct.md)<br>
-[9、进程、线程的创建和派生](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E6%B4%BE%E7%94%9F.md)<br>
-[10、任务调度](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6.md)<br>
-[11、进程间通信之管道](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E7%AE%A1%E9%81%93.md)<br>
-[12、进程间通信之信号](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E4%BF%A1%E5%8F%B7.md)<br>
-[13、进程间通信之共享内存和信号量](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98%E5%92%8C%E4%BF%A1%E5%8F%B7%E9%87%8F.md)<br>
+[6、Linux内核进程间通信与管道socket，XSI(System V)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%8C%E7%AE%A1%E9%81%93%EF%BC%8Csocket%EF%BC%8CXSI(System%20V).md)<br>
+[7、Linux内核进程状态总结](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81%E6%80%BB%E7%BB%93.md)<br>
+[8、Linux内核进程的核心——task_truct](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%A0%B8%E5%BF%83%E2%80%94%E2%80%94task_truct.md)<br>
+[9、Linux内核进程、线程的创建和派生](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E6%B4%BE%E7%94%9F.md)<br>
+[10、Linux内核进程管理任务调度](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6.md)<br>
+[11、Linux内核进程间通信之管道](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E7%AE%A1%E9%81%93.md)<br>
+[12、Linux内核进程间通信之信号](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E4%BF%A1%E5%8F%B7.md)<br>
+[13、Linux内核进程间通信之共享内存和信号量](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B9%8B%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98%E5%92%8C%E4%BF%A1%E5%8F%B7%E9%87%8F.md)<br>
 [14、Linux内核进程调度O(1)调度算法](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6O(1)%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95.md)<br>
+[15、Linux内核进程管理原理详解(代码演示)](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3(%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA).md)<br>
+[16、Linux内核进程管理并发同步与原子操作](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%B9%B6%E5%8F%91%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%8E%9F%E5%AD%90%E6%93%8D%E4%BD%9C.md)<br>
+[17、Linux内核进程管理进程优先级](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E8%BF%9B%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7.md)<br>
+[18、Linux内核进程述符和进程状态](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E8%BF%B0%E7%AC%A6%E5%92%8C%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81.md)<br>
+[19、Linux内核IO基础知识与概念](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8IO%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E4%B8%8E%E6%A6%82%E5%BF%B5.md)<br>
+[20、Linux内核Socket通信原理和实例讲解](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8Socket%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E4%BE%8B%E8%AE%B2%E8%A7%A3.md)<br>
+[21、Linux内核进程的管理与调度](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E7%9A%84%E7%AE%A1%E7%90%86%E4%B8%8E%E8%B0%83%E5%BA%A6.md)<br>
+[22、Linux内核进程管理几种CPU调度策略](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%87%A0%E7%A7%8DCPU%E8%B0%83%E5%BA%A6%E7%AD%96%E7%95%A5.md)<br>
+[23、Linux内核进程管理几种进程状态](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%87%A0%E7%A7%8D%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81.md)<br>
+[24、Linux内核六大进程通信机制原理](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/Linux%E5%86%85%E6%A0%B8%E5%85%AD%E5%A4%A7%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6%E5%8E%9F%E7%90%86.md)<br>
 
 **[内存管理](https://github.com/0voice/linux_kernel_wiki/tree/main/%E6%96%87%E7%AB%A0/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86)**<br>
 管理学领域术语：内存管理是指软件运行时对计算机内存资源的分配和使用的技术。其最主要的目的是如何高效，快速的分配，并且在适当的时候释放和回收内存资源。一个执行中的程式，譬如网页浏览器在个人电脑或是图灵机（Turing machine）里面，为一个行程将资料转换于真实世界及电脑内存之间，然后将资料存于电脑内存内部（在计算机科学，一个程式是一群指令的集合，一个行程是电脑在执行中的程式）。一个程式结构由以下两部分而成：“本文区段”，也就是指令存放，提供CPU使用及执行； “资料区段”，储存程式内部本身设定的资料，例如常数字串。
@@ -103,7 +113,6 @@
 [13、Linux中的内存管理之分页](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%B9%8B%E5%88%86%E9%A1%B5.md)<br>
 [14、浅谈Linux内核之CPU缓存](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E6%B5%85%E8%B0%88Linux%E5%86%85%E6%A0%B8%E4%B9%8BCPU%E7%BC%93%E5%AD%98.md)<br>
 [15、Linux IO 之 IO与网络模型](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/Linux%20IO%20%E4%B9%8B%20IO%E4%B8%8E%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.md)<br>
-<br>
 [15、你真的理解Linux中断机制吗](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E4%BD%A0%E7%9C%9F%E7%9A%84%E7%90%86%E8%A7%A3Linux%E4%B8%AD%E6%96%AD%E6%9C%BA%E5%88%B6%E5%98%9B.md)<br>
 [16、Linux内核之系统调用](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8.md)<br>
 [17、Linux内核之任务空间管理](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E4%BB%BB%E5%8A%A1%E7%A9%BA%E9%97%B4%E7%AE%A1%E7%90%86.md)<br>
@@ -131,6 +140,10 @@
 [1、Linux 总线、设备、驱动模型的探究](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/Linux%20%E6%80%BB%E7%BA%BF%E3%80%81%E8%AE%BE%E5%A4%87%E3%80%81%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%8E%A2%E7%A9%B6.md)<br>
 [2、Linux 设备和驱动的相遇](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/Linux%20%E8%AE%BE%E5%A4%87%E5%92%8C%E9%A9%B1%E5%8A%A8%E7%9A%84%E7%9B%B8%E9%81%87.md)<br>
 [3、Linux操作系统学习之字符设备](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E4%B9%8B%E5%AD%97%E7%AC%A6%E8%AE%BE%E5%A4%87.md)<br>
+[4、Linux内核设备驱动IO流程详解](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/Linux%E5%86%85%E6%A0%B8%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8IO%E6%B5%81%E7%A8%8B%E8%AF%A6%E8%A7%A3.md)<br>
+[5、Linux内核设备信息集合](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/Linux%E5%86%85%E6%A0%B8%E8%AE%BE%E5%A4%87%E4%BF%A1%E6%81%AF%E9%9B%86%E5%90%88.md)<br>
+[6、Linux内核字符设备Character Device](https://github.com/0voice/linux_kernel_wiki/blob/main/%E6%96%87%E7%AB%A0/%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8/Linux%E5%86%85%E6%A0%B8%E5%AD%97%E7%AC%A6%E8%AE%BE%E5%A4%87Character%20Device.md)<br>
+
 
 <br>
 
